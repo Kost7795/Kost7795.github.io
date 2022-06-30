@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.shap {
+  margin: 10px 0 50px 0;
+  padding: 0 100px 0 100px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.navigation {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    margin-top: 20px;
+    max-width: 1500px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px 25px 15px 25px;
+    opacity: 0.9;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 100px;
+}
+
+.menu li:hover {
+  opacity: 0.5;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #4e96c0;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.page {
+    padding-bottom: 5px;
+    border-bottom: solid #4e96c0 3px;
+}
+
+.relevance {
+    max-width: 1500px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 0 50px 50px 50px;
+    opacity: 0.9;
+}
+
+.relevance h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #4e96c0;
+}
+
+.relevance p {
+    text-indent: 20px;
+    font-size: 25px;
+    color: black;
+}
+
+.work_service {
+    max-width: 1500px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 0 50px 50px 50px;
+    opacity: 0.9;
+}
+
+.work_service h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #4e96c0;
+}
+
+.work_service p {
+    text-indent: 20px;
+    font-size: 25px;
+    color: black;
+}
+
+.paragraf li {
+    margin-left: 47px;
+    text-indent: 20px;
+    font-size: 25px;
+    color: black;
+}
