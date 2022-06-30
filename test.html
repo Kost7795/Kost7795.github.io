@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="css/test_style.css">
+</head>
+<body>
+    <header> <!-- Шапка страницы -->
+        <span class="shap_site">
+            <div class="shap_site_block">
+                <div class="container">
+                    <a href="about.html"><img class="icon1" src="img/icon1.png" alt="icon"></a>
+                    <div class="title_zag">
+                        <h1>РЕКОМЕНДАТЕЛЬНАЯ СЕТЕВАЯ СИСТЕМА<br> ПО ТЕСТИРОВАНИЮ И ОЦЕНКЕ ОБРАЗОВАТЕЛЬНЫХ WEB-СЕРВИСОВ</h1>
+                    </div>
+                    <a href="about.html"><img class="icon2" src="img/icon1.png" alt="icon"></a>
+                    <div class="shap">
+                        <div class="navigation">
+                            <ul class="menu">
+                                <li><a href="about.html">О системе</a></li>
+                                <li><a class="page" href="test.html">Тестирование</a></li>
+                                <li><a href="sources.html">Источники</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="test"> <!-- Начало страницы с тестом -->
+        <div class="container"> <!-- Начало блока контейнера -->
+            <div class="head_test">
+                    <h2 class="heading_test">Комплексная оценка</h2>
+            </div>
+            <div class="form_test_1"> <!-- Начало теста 1-->
+                <div class="form1"> <!-- Форма1 -->
+                    <h2 class="heading_services">Сервис №1</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    maxlength="15"
+                    name="first_service"
+                    id="inp_ser_1"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_1"> <!-- Критерии со слайдерами для первой формы -->
+                        <div class="criteries"> <!-- Критерии 1 (Форма1) -->
+                            <h2 class="heading_rate">1. Соответствие программе обучения:</h2>
+                            <button class="hint_1-1">?</button> 
+                            <div class="pop_1-1 not_active">
+                                <div class="text_hint">
+                                    <button class="exit_btn">X</button>
+                                    <p class="text_pop">Комплекс основных характеристик образования 
+                                        (объем, содержание, планируемы результаты), организационно-педагогических условий,
+                                         форм аттестации, который представлен в виде учебного плана, 
+                                         календарного учебного графика, рабочих программ учебных предметов, 
+                                         курсов, дисциплин (модулей), иных компонентов, а также оценочных 
+                                         и методических материалов.<br><br>Максимальная оценка: 5</p>
+                                </div>
+                            </div>               
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_1-1" 
+                                id="rate_1-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                class="service_1"
+                                >
+                                 <output id="volume_1-1" for="rate_1-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 2 (Форма1) -->
+                            <h2 class="heading_rate">2. Научная обоснованность:</h2>
+                            <button class="hint_1-2">?</button>
+                            <div class="pop_1-2 not_active">
+                                <div class="text_hint">
+                                    <button class="exit_btn">X</button>
+                                    <p class="text_pop">Соответствие с принятыми нормами и критериями научности, 
+                                        с использованием принятых научным сообществом методов и методологии 
+                                        научного познания.<br><br>Максимальная оценка: 5</p>
+                                </div>
+                            </div>  
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_1-2" 
+                                id="rate_1-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_1-2" for="rate_1-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 3 (Форма1) -->
+                            <h2 class="heading_rate">3. Соответствие единой методике:</h2>
+                            <button class="hint_1-3">?</button> 
+                            <div class="pop_1-3 not_active">
+                                <div class="text_hint">
+                                    <button class="exit_btn">X</button>
+                                    <p class="text_pop">«От простого к сложному», 
+                                        соблюдение последовательности представления 
+                                        материалов и т.д.<br><br>Максимальная оценка: 5</p>
+                                </div>
+                            </div> 
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_1-3" 
+                                id="rate_1-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_1-3" for="rate_1-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 4 (Форма1) -->
+                            <h2 class="heading_rate">4. Отсутствие ошибок и неэтичных элементов:</h2>
+                            <button class="hint_1-4">?</button> 
+                            <div class="pop_1-4 not_active">
+                                <div class="text_hint">
+                                    <button class="exit_btn">X</button>
+                                    <p class="text_pop">В web-сервисе должны отсутствовать 
+                                        фактические ошибки, неэтичные элементы, способные 
+                                        оскорбить того или иного пользователя.<br><br>
+                                        Максимальная оценка: 5</p>
+                                </div>
+                            </div> 
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_1-4" 
+                                id="rate_1-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_1-4" for="rate_1-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 5 (Форма1) -->
+                            <h2 class="heading_rate">5. Оптимальность технологических качеств:</h2>
+                            <button class="hint_1-5">?</button>
+                            <div class="pop_1-5 not_active">
+                                <div class="text_hint">
+                                    <button class="exit_btn">X</button>
+                                    <p class="text_pop">Например, качество полиграфии, соответствие 
+                                        СанПИНам и пр.<br><br>
+                                        Максимальная оценка: 5</p>
+                                </div>
+                            </div>  
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_1-5" 
+                                id="rate_1-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_1-5" for="rate_1-5">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для первой формы -->
+                    <div class="requirements"> <!-- Начало требования с чек-боксами 1-->
+                        <h2 class="heading_criteries">Соответствие дидактическим <br> требованиям:</h2> 
+                        <div class="requirs_collumn"> 
+                            <div class="requirs_collumn_1"> <!-- Колонка чек-боксов 1 -->
+                                <div class="requir"> <!-- Чек-бокс 1 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek1" 
+                                    name="chek_1-1" 
+                                    id="chek_1-1"
+                                    >
+                                    <label for="chek_1-1" class="checkmark">Интерактивность</label>
+                                    <button class="hint_2-1">?</button>
+                                    <div class="pop_2-1 not_active">
+                                        <div class="text_hint">
+                                            <button class="exit_btn">X</button>
+                                            <p class="text_pop"> Отражает возможности
+                                                взаимодействия обучающегося с образовательным ресурсом.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 2 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek1" 
+                                    name="chek_1-2" 
+                                    id="chek_1-2"
+                                    >
+                                    <label for="chek_1-2" class="checkmark">Доступность</label>
+                                    <button class="hint_2-2">?</button>
+                                    <div class="pop_2-2 not_active">
+                                        <div class="text_hint">
+                                            <button class="exit_btn">X</button>
+                                            <p class="text_pop">Означает недопустимость
+                                                чрезмерной усложненности и перегруженности учебного материала, при которых овладение
+                                                материалом становится непосильным для обучающихся.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 3 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek1" 
+                                    name="chek_1-3" 
+                                    id="chek_1-3"
+                                    > 
+                                    <label for="chek_1-3" class="checkmark">Активизация</label>
+                                    <button class="hint_2-3">?</button>
+                                    <div class="pop_2-3 not_active">
+                                        <div class="text_hint">
+                                            <button class="exit_btn">X</button>
+                                            <p class="text_pop">Активизация самостоятельной деятельности студентов.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requirs_collumn_2">  <!-- Колонка чек-боксов 2 -->
+                                <div class="requir"> <!-- Чек-бокс 4 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek1" 
+                                    name="chek_1-4" 
+                                    id="chek_1-4"
+                                    > 
+                                    <label for="chek_1-4" class="checkmark">Наглядность</label>
+                                    <button class="hint_2-4">?</button>
+                                    <div class="pop_2-4 not_active">
+                                        <div class="text_hint">
+                                            <button class="exit_btn">X</button>
+                                            <p class="text_pop">Имеет место при использовании чувственного восприятия изучаемых
+                                                объектов.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 5 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek1" 
+                                    name="chek_1-5" 
+                                    id="chek_1-5"
+                                    > 
+                                    <label for="chek_1-5" class="checkmark">Систематичность</label>
+                                    <button class="hint_2-5">?</button>
+                                    <div class="pop_2-5 not_active">
+                                        <div class="text_hint">
+                                            <button class="exit_btn">X</button>
+                                            <p class="text_pop">Обеспечение последовательного усвоения
+                                                учащимися определенной системы знаний в изучаемой предметной области. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 6 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek1" 
+                                    name="chek_1-6" 
+                                    id="chek_1-6"
+                                    > 
+                                    <label for="chek_1-6" class="checkmark">Проблемность</label>
+                                    <button class="hint_2-6">?</button>
+                                    <div class="pop_2-6 not_active">
+                                        <div class="text_hint">
+                                            <button class="exit_btn">X</button>
+                                            <p class="text_pop">Подразумевает постановку актуальных учебных проблем, требующих решения.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> <!-- Конец требования с чек-боксами 1-->
+                </div> <!-- Конец Формы1 -->
+                <div class="form2"> <!-- Форма2 -->
+                    <h2 class="heading_services">Сервис №2</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_2"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_2"> <!-- Критерии со слайдерами для формы 2 -->
+                        <div class="criteries"> <!-- Критерий 1 (форма 2) -->
+                            <h2 class="heading_rate">1. Соответствует программе обучения:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_2-1" 
+                                id="rate_2-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_2-1" for="rate_2-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 2 (форма 2) -->
+                            <h2 class="heading_rate">2. Научная обоснованность:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_2-2" 
+                                id="rate_2-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_2-2" for="rate_2-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 3 (форма 2) -->
+                            <h2 class="heading_rate">3. Соответствие единой методике:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_2-3" 
+                                id="rate_2-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_2-3" for="rate_2-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 4 (форма 2) -->
+                            <h2 class="heading_rate">4. Отутствие ошибок и неэтичных элементов:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_2-4" 
+                                id="rate_2-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_2-4" for="rate_2-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 5 (форма 2) -->
+                            <h2 class="heading_rate">5. Оптимальность технологических качеств:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_2-5" 
+                                id="rate_2-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                >
+                                <output id="volume_2-5" for="rate_2-5">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для Формы2 -->
+                    <div class="requirements"> <!-- Начало требований с чек-боксами 2-->
+                        <h2 class="heading_criteries">Соответствие дидактическим <br> требованиям:</h2> 
+                        <div class="requirs_collumn"> 
+                            <div class="requirs_collumn_1"> <!-- Колонка с чек-боксами 1 (форма 2) -->
+                                <div class="requir"> <!-- Чек-бокс 1 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek2" 
+                                    name="chek_2-1" 
+                                    id="chek_2-1"
+                                    >
+                                    <label for="chek_2-1" class="checkmark">Интерактивность</label>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 2 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek2" 
+                                    name="chek_2-2" 
+                                    id="chek_2-2"
+                                    >
+                                    <label for="chek_2-2" class="checkmark">Доступность</label>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 3 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek2" 
+                                    name="chek_2-3" 
+                                    id="chek_2-3"
+                                    > 
+                                    <label for="chek_2-3" class="checkmark">Активизация</label>
+                                </div>
+                            </div>
+                            <div class="requirs_collumn_2"> <!-- Колонка с чек-боксами 2 (форма 2) -->
+                                <div class="requir"> <!-- Чек-бокс 4 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek2" 
+                                    name="chek_2-4" 
+                                    id="chek_2-4"
+                                    > 
+                                    <label for="chek_2-4" class="checkmark">Наглядность</label>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 5 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek2" 
+                                    name="chek_2-5" 
+                                    id="chek_2-5"
+                                    > 
+                                    <label for="chek_2-5" class="checkmark">Систематичность</label>
+                                </div>
+                                <div class="requir"> <!-- Чек-бокс 6 -->
+                                    <input 
+                                    type="checkbox" 
+                                    class="chek2" 
+                                    name="chek_2-6" 
+                                    id="chek_2-6"
+                                    > 
+                                    <label for="chek_2-6" class="checkmark">Проблемность</label>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> <!-- Конец требования с чек-боксами 2-->
+                </div> <!-- Конец Формы2 -->
+                <div class="form3"> <!-- Начало Формы3 -->
+                    <h2 class="heading_services">Результат сравнения:</h2>
+                    <button class="button_compare">Сравнить</button>
+                    <div class="title_form_3">
+                        <h2 class="heading_criteries_result"></h2>
+                    </div>
+                    <div class="result"></div>
+                    <div class="result_val"></div>
+                    <div class="drob_result">
+                        <div class="drob_result_1-1"></div>
+                        <div class="drob_result_1-2"></div>
+                    </div>
+                    <div class="result_proc"></div>
+                    <button class="btn_reset btn_reset_not_active">Сбросить</button>
+                </div> <!-- Конец Формы3 -->
+            </div> <!-- Конец теста 1 -->
+            <div class="head_test"> <!-- Заголовок теста 2 -->
+                <h2 class="heading_test">Оценка концептуального аспекта</h2>
+            </div>
+            <div class="form_test_1"> <!-- Начало теста 2-->
+                <div class="form4"> <!-- Начало четвертой формы -->
+                    <h2 class="heading_services">Сервис №1</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_3"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_3"> <!-- Критерии со слайдерами для первой формы -->
+                        <div class="criteries"> <!-- Критерии 1 (Форма7) -->
+                            <h2 class="heading_rate">1. Определение целей и задач обучения:</h2>                
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-1" 
+                                id="rate_3-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                class="service_1"
+                                >
+                                 <output id="volume_3-1" for="rate_3-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 2 (Форма7) -->
+                            <h2 class="heading_rate">2. Новизна:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-2" 
+                                id="rate_3-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_3-2" for="rate_3-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 3 (Форма7) -->
+                            <h2 class="heading_rate">3. Соответствие заявленным целям:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-3" 
+                                id="rate_3-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_3-3" for="rate_3-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 4 (Форма7) -->
+                            <h2 class="heading_rate">4. Целесообразность:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-4" 
+                                id="rate_3-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_3-4" for="rate_3-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 5 (Форма7) -->
+                            <h2 class="heading_rate">5. Оптимальность состава:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-5" 
+                                id="rate_3-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_3-5" for="rate_3-5">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 6 (Форма7) -->
+                            <h2 class="heading_rate">6. Соответствие тенденциям:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-6" 
+                                id="rate_3-6" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_3-6" for="rate_3-6">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 7 (Форма7) -->
+                            <h2 class="heading_rate">7. Возможность использования учащимися с ограниченными возможностями:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_3-7" 
+                                id="rate_3-7" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_3-7" for="rate_3-7">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для четвертой формы -->
+                </div> <!-- Конец четвертой формы -->
+                <div class="form5">
+                    <h2 class="heading_services">Сервис №2</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_4"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_4"> <!-- Критерии со слайдерами для первой формы -->
+                        <div class="criteries"> <!-- Критерии 1 (Форма7) -->
+                            <h2 class="heading_rate">1. Определение целей и задач обучения:</h2>                
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-1" 
+                                id="rate_4-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                class="service_1"
+                                >
+                                 <output id="volume_4-1" for="rate_4-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 2 (Форма7) -->
+                            <h2 class="heading_rate">2. Новизна:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-2" 
+                                id="rate_4-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_4-2" for="rate_4-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 3 (Форма7) -->
+                            <h2 class="heading_rate">3. Соответствие заявленным целям:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-3" 
+                                id="rate_4-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_4-3" for="rate_4-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 4 (Форма7) -->
+                            <h2 class="heading_rate">4. Целесообразность:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-4" 
+                                id="rate_4-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_4-4" for="rate_4-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 5 (Форма7) -->
+                            <h2 class="heading_rate">5. Оптимальность состава:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-5" 
+                                id="rate_4-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_4-5" for="rate_4-5">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 6 (Форма7) -->
+                            <h2 class="heading_rate">6. Соответствие тенденциям:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-6" 
+                                id="rate_4-6" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_4-6" for="rate_4-6">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 7 (Форма7) -->
+                            <h2 class="heading_rate">7. Возможность использования учащимися с ограниченными возможностями:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_4-7" 
+                                id="rate_4-7" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_4-7" for="rate_4-7">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для пятой формы -->
+                </div> 
+                <div class="form6">
+                    <h2 class="heading_services">Результат сравнения:</h2>
+                    <button class="button_compare">Сравнить</button>
+                    <div class="title_form_6">
+                        <h2 class="heading_criteries"></h2>
+                    </div>
+                    <div class="result_2"></div>
+                    <div class="result_val_2"></div>
+                    <div class="drob_result_2">
+                        <div class="drob_result_2-1"></div>
+                        <div class="drob_result_2-2"></div>
+                    </div>
+                    <div class="result_proc_2"></div>
+                    <button class="btn_reset btn_reset_not_active">Сбросить</button>
+                </div>
+            </div> <!-- Конец теста 2-->
+            <div class="head_test"> <!-- Заголовок теста 3 -->
+                <h2 class="heading_test">Оценка usability (удобоиспользования)</h2>
+            </div>
+            <div class="form_test_1"> <!-- Начало теста 3 -->
+                <div class="form7"> <!-- Форма7 -->
+                    <h2 class="heading_services">Сервис №1</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_5"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_5"> <!-- Критерии со слайдерами для первой формы -->
+                        <div class="criteries"> <!-- Критерии 1 (Форма7) -->
+                            <h2 class="heading_rate">1. Архитектура и навигация:</h2>                
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-1" 
+                                id="rate_5-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                class="service_1"
+                                >
+                                 <output id="volume_5-1" for="rate_5-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 2 (Форма7) -->
+                            <h2 class="heading_rate">2. Планировка и дизайн:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-2" 
+                                id="rate_5-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_5-2" for="rate_5-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 3 (Форма7) -->
+                            <h2 class="heading_rate">3. Содержание:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-3" 
+                                id="rate_5-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_5-3" for="rate_5-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 4 (Форма7) -->
+                            <h2 class="heading_rate">4. Формы и взаимодействие:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-4" 
+                                id="rate_5-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_5-4" for="rate_5-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 5 (Форма7) -->
+                            <h2 class="heading_rate">5. Графика и цветовое решение:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-5" 
+                                id="rate_5-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_5-5" for="rate_5-5">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 6 (Форма7) -->
+                            <h2 class="heading_rate">6. Оформление текста:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-6" 
+                                id="rate_5-6" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_5-6" for="rate_5-6">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 7 (Форма7) -->
+                            <h2 class="heading_rate">7. Устойчивость к ошибкам:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_5-7" 
+                                id="rate_5-7" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_5-7" for="rate_5-7">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для первой формы -->
+                </div> <!-- Конец Формы7 -->
+                <div class="form8"> <!-- Форма8 -->
+                    <h2 class="heading_services">Сервис №2</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_6"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_6"> <!-- Критерии со слайдерами для формы 8 -->
+                        <div class="criteries"> <!-- Критерий 1 (форма 8) -->
+                            <h2 class="heading_rate">1. Архитектура и навигация:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-1" 
+                                id="rate_6-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_6-1" for="rate_6-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 2 (форма 8) -->
+                            <h2 class="heading_rate">2. Планировка и дизайн:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-2" 
+                                id="rate_6-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_6-2" for="rate_6-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 3 (форма 8) -->
+                            <h2 class="heading_rate">3. Содержание:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-3" 
+                                id="rate_6-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_6-3" for="rate_6-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 4 (форма 8) -->
+                            <h2 class="heading_rate">4. Формы и взаимодействие:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-4" 
+                                id="rate_6-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_6-4" for="rate_6-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 5 (форма 8) -->
+                            <h2 class="heading_rate">5. Графика и цветовое решение:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-5" 
+                                id="rate_6-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_6-5" for="rate_6-5">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 6 (форма 8) -->
+                            <h2 class="heading_rate">6. Оформление текста:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-6" 
+                                id="rate_6-6" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                class="inp"
+                                >
+                                <output id="volume_6-6" for="rate_6-6">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 7 (форма 8) -->
+                            <h2 class="heading_rate">7. Устойчивость к ошибкам:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_6-7" 
+                                id="rate_6-7" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                class="inp"
+                                >
+                                <output id="volume_6-7" for="rate_6-7">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для Формы8 -->
+                </div> <!-- Конец Формы8 -->
+                <div class="form9"> <!-- Начало Формы9 -->
+                    <h2 class="heading_services">Результат сравнения:</h2>
+                    <button class="button_compare">Сравнить</button>
+                    <div class="title_form_9">
+                        <h2 class="heading_criteries"></h2>
+                    </div>
+                    <div class="result_3"></div>
+                    <div class="result_val_3"></div>
+                    <div class="drob_result_3">
+                        <div class="drob_result_3-1"></div>
+                        <div class="drob_result_3-2"></div>
+                    </div>
+                    <div class="result_proc_3"></div>
+                    <button class="btn_reset btn_reset_not_active">Сбросить</button>
+                </div> <!-- Конец Формы9 -->
+            </div>
+            <div class="head_test"> <!-- Заголовок теста 3 -->
+                <h2 class="heading_test">Дизайн-эргономическая оценка</h2>
+            </div>
+            <div class="form_test_1"> <!-- Начало теста 3 -->
+                <div class="form10"> <!-- Форма10 -->
+                    <h2 class="heading_services">Сервис №1</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_7"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_7"> <!-- Критерии со слайдерами для первой формы -->
+                        <div class="criteries"> <!-- Критерии 1 (Форма7) -->
+                            <h2 class="heading_rate">1. Уровень технологической реализации:</h2>                
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-1" 
+                                id="rate_7-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                class="service_1"
+                                >
+                                 <output id="volume_7-1" for="rate_7-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 2 (Форма7) -->
+                            <h2 class="heading_rate">2. Технологическая оригинальность проекта:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-2" 
+                                id="rate_7-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_7-2" for="rate_7-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 3 (Форма7) -->
+                            <h2 class="heading_rate">3. Качество воспроизведения:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-3" 
+                                id="rate_7-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_7-3" for="rate_7-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 4 (Форма7) -->
+                            <h2 class="heading_rate">4. Качество экранного дизайна:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-4" 
+                                id="rate_7-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_7-4" for="rate_7-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 5 (Форма7) -->
+                            <h2 class="heading_rate">5. Удобство интерфейса:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-5" 
+                                id="rate_7-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_7-5" for="rate_7-5">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 6 (Форма7) -->
+                            <h2 class="heading_rate">6. Степень адаптации ЭОР к образовательному процессу:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-6" 
+                                id="rate_7-6" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_7-6" for="rate_7-6">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерии 7 (Форма7) -->
+                            <h2 class="heading_rate">7. Эстетичность компонентов ЭОР:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_7-7" 
+                                id="rate_7-7" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_7-7" for="rate_7-7">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для первой формы -->
+                </div> <!-- Конец Формы10 -->
+                <div class="form11"> <!-- Форма11 -->
+                    <h2 class="heading_services">Сервис №2</h2>
+                    <input 
+                    class="input_services" 
+                    type="text" 
+                    placeholder="Введите название сервиса" 
+                    name="first_service"
+                    id="inp_ser_8"
+                    > 
+                    <button class="service_button">Ок</button>
+                    <h2 class="heading_criteries">Оцените сервис по критериям:</h2>
+                    <div class="rate_8"> <!-- Критерии со слайдерами для формы 8 -->
+                        <div class="criteries"> <!-- Критерий 1 (форма 8) -->
+                            <h2 class="heading_rate">1. Уровень технологической реализации:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-1" 
+                                id="rate_8-1" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_8-1" for="rate_8-1">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 2 (форма 8) -->
+                            <h2 class="heading_rate">2. Технологическая оригинальность проекта:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-2" 
+                                id="rate_8-2" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_8-2" for="rate_8-2">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 3 (форма 8) -->
+                            <h2 class="heading_rate">3. Качество воспроизведения:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-3" 
+                                id="rate_8-3" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_8-3" for="rate_8-3">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 4 (форма 8) -->
+                            <h2 class="heading_rate">4. Качество экранного дизайна:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-4" 
+                                id="rate_8-4" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_8-4" for="rate_8-4">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 5 (форма 8) -->
+                            <h2 class="heading_rate">5. Удобство интерфейса:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-5" 
+                                id="rate_8-5" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                >
+                                <output id="volume_8-5" for="rate_8-5">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 6 (форма 8) -->
+                            <h2 class="heading_rate">6. Степень адаптации ЭОР к образовательному процессу:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-6" 
+                                id="rate_8-6" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="0"
+                                class="inp"
+                                >
+                                <output id="volume_8-6" for="rate_8-6">1</output>
+                            </div>
+                        </div>
+                        <div class="criteries"> <!-- Критерий 7 (форма 8) -->
+                            <h2 class="heading_rate">7. Эстетичность компонентов ЭОР:</h2>
+                            <div class="slider_rate">
+                                <input 
+                                type="range" 
+                                name="rate_8-7" 
+                                id="rate_8-7" 
+                                step="1" 
+                                min="1" 
+                                max="5" 
+                                value="1"
+                                class="inp"
+                                >
+                                <output id="volume_8-7" for="rate_8-7">1</output>
+                            </div>
+                        </div>
+                    </div> <!-- Конец критериев со слайдерами для Формы8 -->
+                </div> <!-- Конец Формы11 -->
+                <div class="form12"> <!-- Начало Формы12 -->
+                    <h2 class="heading_services">Результат сравнения:</h2>
+                    <button class="button_compare">Сравнить</button>
+                    <div class="title_form_12">
+                        <h2 class="heading_criteries"></h2>
+                    </div>
+                    <div class="result_4"></div>
+                    <div class="result_val_4"></div>
+                    <div class="drob_result_4">
+                        <div class="drob_result_4-1"></div>
+                        <div class="drob_result_4-2"></div>
+                    </div>
+                    <div class="result_proc_4"></div>
+                    <button class="btn_reset btn_reset_not_active">Сбросить</button>
+                </div> <!-- Конец Формы12 -->
+            </div>
+        </div> <!-- Конец блока контейнера -->
+    </div> <!-- Конец страницы с тестом -->
+    <a href="#" id="toTop">
+        <svg width="30pt" height="10pt" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <g>
+                    <path d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+                c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z"/>
+                </g>
+            </g>
+        </svg>
+    </a>
+    <footer>
+        <div class="podval">
+            <h3>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</h2>
+            <h1>ЛИПЕЦКИЙ ГОСУДАРСТВЕННЫЙ ПЕДАГОГИЧЕСКИЙ УНИВЕРСИТЕТ</h1>
+            <h2>ИМЕНИ П.П. СЕМЕНОВА-ТЯН-ШАНСКОГО</h2>
+        </div>
+    </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
